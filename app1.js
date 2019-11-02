@@ -1,6 +1,6 @@
 //Multi Tenant Multi Resource Authentication with MSAL JS
 
-tenantUrl = localStorage.getItem("tenantUrl");
+tenantUrl = localStorage.getItem("msal-tenantUrl");
      msalConfig = {
         auth: {
             clientId: '0c71b8e8-4cf4-4d83-818e-cbd27fe9af97', //This is your client ID
@@ -118,7 +118,7 @@ tenantUrl = localStorage.getItem("tenantUrl");
                                 //config.endpoints.sharePointUri=r.webUrl;
                                 SPORequestObj.scopes.push(tenantUrl+"/.default");
                                 tenantUrl = r.webUrl;
-                                localStorage.setItem("tenantUrl",  tenantUrl);
+                                localStorage.setItem("msal-tenantUrl",  tenantUrl);
                                 //getSPCurrentuser(r.webUrl);
                                 acquireTokenPopupAndCallSPO();
                             });
@@ -188,7 +188,7 @@ tenantUrl = localStorage.getItem("tenantUrl");
                                 //config.endpoints.sharePointUri=r.webUrl;
                                 SPORequestObj.scopes.push(tenantUrl+"/.default");
                                 tenantUrl = r.webUrl;
-                                localStorage.setItem("tenantUrl",  tenantUrl);
+                                localStorage.setItem("msal-tenantUrl",  tenantUrl);
                                 //getSPCurrentuser(r.webUrl);
                                 acquireTokenPopupAndCallSPO();
                             });
