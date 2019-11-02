@@ -5,7 +5,8 @@
     //store config globally which will be useful for subsequent call.
     config = {
         clientId: '0c71b8e8-4cf4-4d83-818e-cbd27fe9af97', //57fbc2a2-1188-4ed0-aaf2-daca857d6957
-        postLogoutRedirectUri: 'http://localhost:9090',
+        postLogoutRedirectUri: 'https://anomepani.github.io/Multi-Tenant-Authentication-using-adal-js/index.html',
+        redirectUri:'https://anomepani.github.io/Multi-Tenant-Authentication-using-adal-js/index.html',
         endpoints: {
             graphApiUri: "https://graph.microsoft.com",
             sharePointUri: tenantUrl 
