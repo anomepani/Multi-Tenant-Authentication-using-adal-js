@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Tenant Multi Resource Authentication with MSAL JS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/msal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.min.js" integrity="sha256-/XfEHUGimdIk42Vy7oTnNLtT8sVrO6vnhhnsQT1W1oo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h3>Reference from : https://github.com/Azure-Samples/active-directory-javascript-graphapi-v2/blob/quickstart/JavaScriptSPA/index.html</h3>
+    <div class="container">
+        <div class="leftContainer">
+            <p id="WelcomeMessage">Welcome to the Microsoft Authentication Library For Javascript Quickstart</p>
+            <button id="SignIn" onclick="signIn()">Sign In</button>
+        </div>
+        <div class="rightContainer">
+            <pre id="json"></pre>
+            <pre id="spo-json"></pre>
+        </div>
+    </div>
+    <script src="app1.js" type="text/javascript"></script>
+</body>
+</html>
