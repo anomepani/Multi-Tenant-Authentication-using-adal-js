@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <!-- Reference from: https://gist.github.com/psignoret/50e88652ae5cb6cc157c09857e3ba87f
+        live sample at : https://bl.ocks.org/psignoret/raw/50e88652ae5cb6cc157c09857e3ba87f/
+        -->
+    <title>Multi Resource,Multi Tenant Authentication using ADAL.JS with </title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            font-family: Tahoma;
+            padding: 3em;
+        }
+    </style>
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.17/js/adal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.42/polyfill.min.js" integrity="sha256-/XfEHUGimdIk42Vy7oTnNLtT8sVrO6vnhhnsQT1W1oo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p>
+        A minimal sample app using ADAL.JS and vanilla JavaScript to obtain
+        an access token from Azure Active Directory,Microsoft Graph and SharePoint and make an API request.
+    </p>
+    <p>Extended <a href="https://gist.github.com/psignoret/50e88652ae5cb6cc157c09857e3ba87f" target="_blank">Original sample</a> and tested with Multi Tenant Authentication and Multi Resource Token</p>
+    <p>
+        <a href="#" onclick="authContext.login(); return false;" id="login">Log in</a><br/>
+        <a href="#" onclick="authContext.logOut(); return false;" id="logout">Log out</a>
+    </p>
+    <p id="username"></p>
+<div id="show-loggedin" style="display: none;">
+
+    <h3>Microsoft Graph me</h3>
+    <pre id="api_response"></pre>
+    <h3>SharePoint currentuser</h3>
+    <pre id="sp_api_response"></pre>
+</div>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
