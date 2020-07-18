@@ -3,8 +3,9 @@
     //Cache Tenant URL for subsequent call once it's received using graph token
     tenantUrl = localStorage.getItem("tenantUrl");
     //store config globally which will be useful for subsequent call.
+//BRSupport => ClientID: 617283f7-a263-4953-87ec-47469a6d1c23
     config = {
-        clientId: '0c71b8e8-4cf4-4d83-818e-cbd27fe9af97', //57fbc2a2-1188-4ed0-aaf2-daca857d6957
+        clientId: '617283f7-a263-4953-87ec-47469a6d1c23',//'0c71b8e8-4cf4-4d83-818e-cbd27fe9af97', //57fbc2a2-1188-4ed0-aaf2-daca857d6957
         postLogoutRedirectUri: 'https://anomepani.github.io/Multi-Tenant-Authentication-using-adal-js/index.html',
         redirectUri:'https://anomepani.github.io/Multi-Tenant-Authentication-using-adal-js/index.html',
         endpoints: {
