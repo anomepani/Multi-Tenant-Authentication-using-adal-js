@@ -1,9 +1,10 @@
 //Multi Tenant Multi Resource Authentication with MSAL JS
 
 tenantUrl = localStorage.getItem("msal-tenantUrl");
+////BRSupport => ClientID: 617283f7-a263-4953-87ec-47469a6d1c23
      msalConfig = {
         auth: {
-            clientId: '0c71b8e8-4cf4-4d83-818e-cbd27fe9af97', //This is your client ID
+            clientId: '617283f7-a263-4953-87ec-47469a6d1c23', //'0c71b8e8-4cf4-4d83-818e-cbd27fe9af97', //This is your client ID
             authority: "https://login.microsoftonline.com/common" //This is your tenant info
         },
         cache: {
