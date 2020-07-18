@@ -1,5 +1,5 @@
 # Multi Tenant Multi Resource Authentication using ADAL.JS and MSAL.JS
-Minimal Sample for Multi Resource,Multi Tenant Authentication using ADAL.JS and ADAL.JS
+Minimal Sample for Multi Resource,Multi Tenant Authentication using ADAL.JS and MSAL.JS
 
 I am inspired from [psignoret](https://gist.github.com/psignoret/50e88652ae5cb6cc157c09857e3ba87f) and [MSAL JS Azure Sample](https://github.com/Azure-Samples/active-directory-javascript-graphapi-v2/blob/quickstart/JavaScriptSPA/index.html) reference of minimal sample for authentication using adal.js.
 
